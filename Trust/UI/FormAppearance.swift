@@ -59,7 +59,8 @@ struct AppFormAppearance {
                     cell.textLabel?.font = AppStyle.error.font
                     cell.textLabel?.textColor = AppStyle.error.textColor
                 }
-                row.section?.insert(labelRow, at: row.indexPath!.row + index + 1)
+                let indexPath = row.indexPath!.row + index + 1
+                row.section?.insert(labelRow, at: indexPath)
             }
         }
     }
